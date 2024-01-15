@@ -95,16 +95,47 @@
 // Number.MIN_VALUE;
 
 //Math object
+// let x;
+// x = Math.sqrt(9);
+// x = Math.abs(5);
+// x = Math.round(3.5);
+// x = Math.ceil(4.5);
+// x = Math.floor(4.5);
+// x = Math.pow(2, 3);
+// x = Math.max(2, 3, 6);
+// x = Math.min(2, 3, 6);
+// x = Math.random();
+// x = Math.floor(Math.random() * 10 + 1);
+
+// console.log(x);
+
+//Date & Time
 let x;
-x = Math.sqrt(9);
-x = Math.abs(5);
-x = Math.round(3.5);
-x = Math.ceil(4.5);
-x = Math.floor(4.5);
-x = Math.pow(2, 3);
-x = Math.max(2, 3, 6);
-x = Math.min(2, 3, 6);
-x = Math.random();
-x = Math.floor(Math.random() * 10 + 1);
+d = new Date();
+// d = d.getTime();
+x = d.getFullYear();
+x = d.getMonth() + 1;
+x = d.getDate();
+x = d.getDay();
+x = d.getHours();
+x = d.getSeconds();
+x = d.getMilliseconds();
+x = `Today's date is ${d.getDate()}-${d.getMonth() + 1}-${d.getFullYear()}`;
+
+//getting your actual time/date at any location of your choice
+x = Intl.DateTimeFormat("default").format(d);
+x = Intl.DateTimeFormat("default", { month: "long" }).format(d);
+
+x = d.toLocaleString("default", { month: "short" });
+x = d.toLocaleString("default", {
+  weekend: "long",
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+  hour: "numeric",
+  minute: "numeric",
+  second: "numeric",
+  timeZone: "West_African_Time",
+});
 
 console.log(x);
