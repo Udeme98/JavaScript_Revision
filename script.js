@@ -46,9 +46,16 @@ let amount = "hello";
 // amount = Boolean(amount);
 
 //Not a Number (NaN)
-console.log(Math.sqrt(-1));
-console.log(undefined + undefined);
-console.log(1 + undefined);
-console.log(1 / "hello");
+// console.log(Math.sqrt(-1));
+// console.log(undefined + undefined);
+// console.log(1 + undefined);
+// console.log(1 / "hello");
+
+// console.log(amount, typeof amount);
+
+//Operators - Operators are symbols we can use in expresssion to do certain things/operations
+// - Arithmetic operators (+,-,*,/,%,++,--)
+// - Assignment operators (=, +=, -=, etc)
+// - Comparison operators (==, ===, !=, <, >, <=, >=)
 
 console.log(amount, typeof amount);
