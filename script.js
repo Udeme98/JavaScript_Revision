@@ -59,14 +59,52 @@
 // - Comparison operators (==, ===, !=, <, >, <=, >=)
 
 //type coersion - coersion happens when you apply operations to values that have different types
-let x;
-x = 5 + "5";
-x = 5 + Number("5");
-x = 5 * "5";
-x = 5 + null;
-x = Number(null);
-x = Number(true);
-x = Number(false);
-x = 5 + true;
+// let x;
+// x = 5 + "5";
+// x = 5 + Number("5");
+// x = 5 * "5";
+// x = 5 + null;
+// x = Number(null);
+// x = Number(true);
+// x = Number(false);
+// x = 5 + true;
 
-console.log(x, typeof x);
+// console.log(x, typeof x);
+
+//String: Methods & Properties
+// .length
+// .toUpperCase()
+// .toLowerCase()
+// .charAt()
+// indexOf()
+// subString()
+// slice()
+// trim()
+// replace('old','new')
+// includes()
+// valueOf()
+// split()
+
+//Number: Methods & Properties
+// toString();
+// toFixed(2);
+// toPrecision(2);
+// toExponential();
+// toLocaleString("en-US");
+// Number.MAX_VALUE;
+// Number.MIN_VALUE;
+
+//Math object
+let x;
+x = Math.sqrt(9);
+x = Math.abs(5);
+x = Math.round(3.5);
+x = Math.ceil(4.5);
+x = Math.floor(4.5);
+x = Math.pow(2, 3);
+x = Math.max(2, 3, 6);
+x = Math.min(2, 3, 6);
+x = Math.random();
+x = Math.floor(Math.random() * 10 + 1);
+
+console.log(x);
