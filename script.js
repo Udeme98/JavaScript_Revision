@@ -24,5 +24,31 @@
 // -Object literals
 // -Arrays
 
-const names = "Udeme";
-console.log(names + " datatype is a " + typeof names);
+// const names = "Udeme";
+// console.log(names + " datatype is a " + typeof names);
+
+//Type conversion
+let amount = "hello";
+
+//convert string to number
+// amount = parseInt(amount);
+// amount = +amount;
+// amount = Number(amount);
+
+//convert number string
+// amount = amount.toString();
+// amount = String(amount);
+
+//convert string to decimal
+// amount = amount.parseFloat()
+
+//converting to boolean
+// amount = Boolean(amount);
+
+//Not a Number (NaN)
+console.log(Math.sqrt(-1));
+console.log(undefined + undefined);
+console.log(1 + undefined);
+console.log(1 / "hello");
+
+console.log(amount, typeof amount);
