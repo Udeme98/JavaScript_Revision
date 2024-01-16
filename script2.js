@@ -91,7 +91,43 @@ person.hasChildren = true; //adding a property
 person.greet = function () {
   console.log(`Hello, my name is ${this.fname}`);
 };
-person.greet();
-x = person;
+// person.greet();
+// x = person;
+
+//object spread and methods
+const todo = {}; //object literal
+// const todo = new Object(); //object costruct
+todo.id = 2;
+todo.name = "buy milk";
+todo.completed = false;
+
+//nesting
+const person1 = {
+  fname: "Adam",
+  address: {
+    state: {
+      city: "Uyo",
+    },
+  },
+};
+
+//using spread
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3, d: 4 };
+const obj3 = { ...obj1, ...obj2 };
+
+//arrays of objects
+const todos = [
+  { id: 1, task: "Exercise" },
+  { id: 2, task: "clean up" },
+  { id: 3, task: "Empty tarsh" },
+];
+x = todos[1].task;
+x = Object.keys(todo);
+x = Object.values(todo);
+x = Object.entries(todo);
+x = todo.hasOwnProperty("go");
+
+//Destructuring & Naming
 
 console.log(x);
