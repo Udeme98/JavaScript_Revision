@@ -58,10 +58,40 @@ z = arr1.flat();
 //static methods on array object
 z = Array.isArray(fruits); //checks for array
 z = Array.from("12345"); //forms an array
-
 const a = 1,
   b = 2,
   c = 3;
 z = Array.of(a, b, c); //forms an array
 
-console.log(z);
+// console.log(z);
+
+//Object Literals - A common data structure that holds key/value pairs
+let x;
+
+const person = {
+  fname: "John Doe",
+  age: 30,
+  isAdmin: true,
+  address: {
+    street: "123 Main st",
+    city: "Uyo",
+    state: "AKS",
+  },
+};
+
+x = person.fname;
+x = person["age"];
+x = person.address.street;
+person.age = 31;
+
+delete person.address; //deletes a property
+person.hasChildren = true; //adding a property
+
+//assigning a function to a person property
+person.greet = function () {
+  console.log(`Hello, my name is ${this.fname}`);
+};
+person.greet();
+x = person;
+
+console.log(x);
