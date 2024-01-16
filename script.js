@@ -127,15 +127,15 @@ x = Intl.DateTimeFormat("default").format(d);
 x = Intl.DateTimeFormat("default", { month: "long" }).format(d);
 
 x = d.toLocaleString("default", { month: "short" });
-x = d.toLocaleString("default", {
-  weekend: "long",
-  month: "short",
-  day: "numeric",
-  year: "numeric",
-  hour: "numeric",
-  minute: "numeric",
-  second: "numeric",
-  timeZone: "West_African_Time",
-});
+// x = d.toLocaleString("default", {
+//   weekend: "long",
+//   month: "short",
+//   day: "numeric",
+//   year: "numeric",
+//   hour: "numeric",
+//   minute: "numeric",
+//   second: "numeric",
+//   timeZone: "West_African_Time",
+// });
 
 console.log(x);

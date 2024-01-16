@@ -19,8 +19,26 @@ let productOutput = `${x} * ${y} = ${x * y}`;
 let quotientOutput = `${x} / ${y} = ${x / y}`;
 let rmOutput = `${x} % ${y} = ${x % y}`;
 
-console.log(sumOutput);
-console.log(differenceOutput);
-console.log(productOutput);
-console.log(quotientOutput);
-console.log(rmOutput);
+// console.log(sumOutput);
+// console.log(differenceOutput);
+// console.log(productOutput);
+// console.log(quotientOutput);
+// console.log(rmOutput);
+
+//Challenge 3a: Arrays
+//Mutate the given array to shown a specified result: [6,5,4,3,2,1,0]
+const arr = [1, 2, 3, 4, 5];
+arr.push(6);
+arr.unshift(0);
+arr.reverse();
+
+// console.log(arr);
+
+//Challenge 3b: Arrays
+//combine both arrays and display it without repeating the 5
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [5, 6, 7, 8, 9, 10];
+const arr3 = [...arr1, ...arr2];
+arr3.splice(5, 1);
+
+console.log(arr3);
