@@ -129,5 +129,43 @@ x = Object.entries(todo);
 x = todo.hasOwnProperty("go");
 
 //Destructuring & Naming
+const todo1 = {
+  id: 1,
+  task: "Clean up",
+  user: { name: "Udeme" },
+};
+const {
+  id: todoId, //renaming
+  task,
+  user: { name }, //destructuring
+} = todo1;
 
-console.log(x);
+// console.log(todoId, task, name);
+
+//Destructuring Arrays
+const number1 = [1, 2, 3, 4, 5];
+const [first, second, ...rest] = number1;
+// console.log(second, rest);
+
+//JSON introduction
+//JSON - JavaScript Object Notation
+//Github API: api.github.com/users
+// [
+//   {
+//     "name":"Joe",
+//     "country":"Canada"
+//   }
+// ]
+
+//converting a javascipt object to a JSON using JSON.Stringify
+const info = {
+  fname: "John",
+  country: "USA",
+  sex: "male",
+};
+const str = JSON.stringify(info);
+console.log(str);
+
+//converting a JSON to a javascipt object using JSON.parse
+const obj = JSON.parse(str);
+console.log(obj);

@@ -31,7 +31,6 @@ const arr = [1, 2, 3, 4, 5];
 arr.push(6);
 arr.unshift(0);
 arr.reverse();
-
 // console.log(arr);
 
 //Challenge 3b: Arrays
@@ -40,5 +39,50 @@ const arr1 = [1, 2, 3, 4, 5];
 const arr2 = [5, 6, 7, 8, 9, 10];
 const arr3 = [...arr1, ...arr2];
 arr3.splice(5, 1);
+// console.log(arr3);
 
-console.log(arr3);
+//Challenge: Objects
+
+//step 1
+const library = [
+  {
+    title: "Happiness",
+    author: "Jane",
+    status: {
+      own: true,
+      reading: false,
+      read: false,
+    },
+  },
+  {
+    title: "Living",
+    author: "Joe",
+    status: {
+      own: true,
+      reading: false,
+      read: false,
+    },
+  },
+  {
+    title: "Food",
+    author: "John",
+    status: {
+      own: true,
+      reading: false,
+      read: false,
+    },
+  },
+];
+
+//step 2
+library[0].status.read = true;
+library[1].status.read = true;
+library[2].status.read = true;
+
+//step 3
+const { title: firstBook } = library[0];
+
+//step 4 - turning the library object into a JSON string
+const strFy = JSON.stringify(library);
+
+console.log(strFy);
