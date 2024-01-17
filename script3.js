@@ -47,6 +47,58 @@ function getRandom(arr) {
   const item = arr[randomIndex];
   console.log(item);
 }
-getRandom([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+// getRandom([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 
-//Global & Function scope
+//Global & Function Scope
+// Scope - The current area or context of a specific piece of code
+
+//Global variables - accessibe from anywhere
+// const x = 100;
+// console.log(x, "in global");
+
+//function scope
+function fscope() {
+  const y = 50;
+  console.log(y);
+}
+// fscope();
+
+// variable shadowing - when a function scoped value of a variable overshadows it's global scope value
+
+//Block Scope
+const x = 10;
+
+if (true) {
+  // console.log(x); //global scope can be accessed any where
+  const y = 200; //local scope
+}
+
+//Your variables should be blocked scoped, so avoid using var to declare variables
+//'var' is a function scope, while 'let' and 'const' is block scope
+
+//Nested Scope
+function first() {
+  const x = 100;
+
+  function second() {
+    const y = 200;
+    console.log(x + y);
+  }
+  second();
+}
+// first();
+
+//Function Declaration vs Expression
+//Function Declaration
+function addDollarSign(value) {
+  return "$" + value;
+}
+console.log(addDollarSign(100));
+
+//Function Expression
+const addPlusSign = function (value) {
+  return "+" + value;
+};
+console.log(addPlusSign(200));
+
+//Arrow functions
