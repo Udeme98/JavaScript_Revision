@@ -123,17 +123,17 @@ const reObj = () => ({
 //a way in JS that let's us create a function and invoke it at the same time
 (function () {
   const user = "John";
-  console.log(user);
+  // console.log(user);
 })();
 
 //passing params
 ((name) => {
-  console.log("This is " + name);
+  // console.log("This is " + name);
 })("John");
 
 //named iife
 (function hello() {
-  console.log("Hello");
+  // console.log("Hello");
 })();
 
 //Execution Context
@@ -141,3 +141,20 @@ const reObj = () => ({
 //This is called execution context. It contains the currently running code and everything that aids its execution
 // -Memory (Stores all your variables and functions as key/value pairs in memory)
 // -Execution (Each line of code is executed line by line)
+
+// Call Stack
+//Stacks of functions to be executed
+//Manages execution contexts
+//Stacks are LIFO (last in, first out)
+const first1 = () => {
+  console.log("first...");
+  second1();
+};
+const second1 = () => {
+  console.log("second...");
+  third1();
+};
+const third1 = () => {
+  console.log("third...");
+};
+first1();
