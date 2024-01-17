@@ -4,27 +4,27 @@
 // Arrays - Arrays are a special type of 'object'and a data structure in Javascript that stores multiple values.
 // arrays zero based
 
-//let x;
+let x;
 
-// const numbers = [21, 42, 84, 168]; //array literals
-// const fruits = new Array("mango", "orange", "apple"); //array constructor
+const numbers = [21, 42, 84, 168]; //array literals
+const fruits = new Array("mango", "orange", "apple"); //array constructor
 
-// x = numbers[1];
-// x = `I really love eating ${fruits[2]}s`;
-// x = numbers.length;
+x = numbers[1];
+x = `I really love eating ${fruits[2]}s`;
+x = numbers.length;
 
-// fruits[fruits.length] = "pear";
-// x = fruits;
+fruits[fruits.length] = "pear";
+x = fruits;
 // console.log(x);
 
 //Basic Array Methods
 let y;
 const arr = [21, 42, 84, 168];
-// arr.push(100); //adds an element to the end of an array
-// arr.pop(); //removes an element from the end of an array
-// arr.unshift(99); //adds an element to the beginning of an array
-// arr.shift(); //removes an element from the beginning of an array
-// arr.reverse(); //reverses an array
+arr.push(100); //adds an element to the end of an array
+arr.pop(); //removes an element from the end of an array
+arr.unshift(99); //adds an element to the beginning of an array
+arr.shift(); //removes an element from the beginning of an array
+arr.reverse(); //reverses an array
 
 y = arr.includes(42);
 y = arr.indexOf(4);
@@ -66,7 +66,7 @@ z = Array.of(a, b, c); //forms an array
 // console.log(z);
 
 //Object Literals - A common data structure that holds key/value pairs
-let x;
+// let x;
 
 const person = {
   fname: "John Doe",
@@ -150,12 +150,12 @@ const [first, second, ...rest] = number1;
 //JSON introduction
 //JSON - JavaScript Object Notation
 //Github API: api.github.com/users
-// [
-//   {
-//     "name":"Joe",
-//     "country":"Canada"
-//   }
-// ]
+[
+  {
+    name: "Joe",
+    country: "Canada",
+  },
+];
 
 //converting a javascipt object to a JSON using JSON.Stringify
 const info = {

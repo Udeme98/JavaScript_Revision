@@ -93,12 +93,45 @@ function first() {
 function addDollarSign(value) {
   return "$" + value;
 }
-console.log(addDollarSign(100));
+// console.log(addDollarSign(100));
 
 //Function Expression
 const addPlusSign = function (value) {
   return "+" + value;
 };
-console.log(addPlusSign(200));
+// console.log(addPlusSign(200));
 
 //Arrow functions
+const ad = (a, b) => {
+  return a + b;
+};
+
+const st = (a, b) => a - b; //explicit return
+const db = (a) => a * 2; //explicit return
+
+//returning an object
+const reObj = () => ({
+  name: "Ud",
+});
+
+// console.log(ad(19, 9));
+// console.log(st(19, 9));
+// console.log(db(19, 9));
+// console.log(reObj());
+
+//Immediately Invoked Function Expression(IIFE)
+//a way in JS that let's us create a function and invoke it at the same time
+(function () {
+  const user = "John";
+  console.log(user);
+})();
+
+//passing params
+((name) => {
+  console.log("This is " + name);
+})("John");
+
+//named iife
+(function hello() {
+  console.log("Hello");
+})();

@@ -42,7 +42,6 @@ arr3.splice(5, 1);
 // console.log(arr3);
 
 //Challenge: Objects
-
 //step 1
 const library = [
   {
@@ -84,4 +83,12 @@ const { title: firstBook } = library[0];
 
 //step 4 - turning the library object into a JSON string
 const strFy = JSON.stringify(library);
-console.log(strFy);
+// console.log(strFy);
+
+// Challenge 4a: Functions
+// Writing a function that converts from F to C
+const getCelcius = (f) => {
+  const res = (f - 32) * (5 / 9);
+  return res;
+};
+console.log(`The temperature is currently ${getCelcius(50)} \xb0C`);
