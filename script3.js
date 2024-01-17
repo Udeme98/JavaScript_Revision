@@ -135,3 +135,9 @@ const reObj = () => ({
 (function hello() {
   console.log("Hello");
 })();
+
+//Execution Context
+// When you run JavaScript, a special environment is created to handle the transformation & execution of code.
+//This is called execution context. It contains the currently running code and everything that aids its execution
+// -Memory (Stores all your variables and functions as key/value pairs in memory)
+// -Execution (Each line of code is executed line by line)

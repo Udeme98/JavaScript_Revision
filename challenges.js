@@ -91,4 +91,23 @@ const getCelcius = (f) => {
   const res = (f - 32) * (5 / 9);
   return res;
 };
-console.log(`The temperature is currently ${getCelcius(50)} \xb0C`);
+console.log(`The temperature is currently ${getCelcius(50)}\xb0C`);
+
+// challenge 4b: functions
+//create a function that accepts an array of numbers as an argument, and returns an object of two properties(max & min)
+const minMax = (arr) => {
+  const max = Math.max(...arr);
+  const min = Math.min(...arr);
+  return { max, min };
+};
+console.log(minMax([1, 2, 3, 4, 6, 7]));
+
+//challenge 4c: function
+//create an iife that takes the length and width of a rectangle and outputs to console
+((len, wid) => {
+  console.log(
+    `The area of a rectangle with a length of ${len} and a width of ${wid} is ${
+      len * wid
+    }.`
+  );
+})(10, 5);
