@@ -71,7 +71,7 @@ switch (month) {
     console.log("It is April");
     break;
   case 5:
-    console.log("It is May");
+    // console.log("It is May");
     break;
   default:
     console.log("It's not the above month");
@@ -80,7 +80,7 @@ switch (month) {
 //using conditionals
 switch (true) {
   case hours < 12:
-    console.log("Good Morning");
+    // console.log("Good Morning");
     break;
   case hours < 18:
     console.log("Good Afternoon");
@@ -91,3 +91,58 @@ switch (true) {
 }
 
 //Truthy & Falsy
+
+// Falsy values
+//- false
+//- 0;
+// '' or "" (Empty strings)
+// null
+// NaN
+// undefined
+
+//Truthy values
+// Everything else that's not falsy
+// true
+// '0'- zero in a String
+// ' ' - space in a string
+// 'false' - false in a string
+// [] - empty Array
+// {} - empty Object
+// function(){} - empty function
+
+const z = true;
+if (z) {
+  // console.log("Truthy value");
+} else {
+  console.log("Falsy value");
+}
+// console.log(Boolean(z));
+
+//caveats
+let children = 0;
+
+if (!isNaN(children)) {
+  // console.log(`You have ${children} children`);
+} else {
+  console.log("Enter number of children");
+}
+
+//checking for empty array
+let arr = ["post"];
+if (arr.length > 0) {
+  console
+    .log
+    // `you've got ${arr.length} ${arr.length === 1 ? "post" : "posts"} available`
+    ();
+} else {
+  console.log("You have no post");
+}
+
+//checking for empty objects
+let user = {};
+
+if (Object.keys(user).length > 0) {
+  console.log("List user");
+} else {
+  // console.log("No user");
+}
