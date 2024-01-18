@@ -53,3 +53,41 @@ if (hour >= 20 && hour < 22) {
 }
 
 //Switch statement
+const m = new Date(2022, 5, 10, 7, 0, 0);
+const month = m.getMonth();
+const hours = m.getHours();
+
+switch (month) {
+  case 1:
+    console.log("It is January");
+    break;
+  case 2:
+    console.log("It is February");
+    break;
+  case 3:
+    console.log("It is March");
+    break;
+  case 4:
+    console.log("It is April");
+    break;
+  case 5:
+    console.log("It is May");
+    break;
+  default:
+    console.log("It's not the above month");
+}
+
+//using conditionals
+switch (true) {
+  case hours < 12:
+    console.log("Good Morning");
+    break;
+  case hours < 18:
+    console.log("Good Afternoon");
+    break;
+  default:
+    console.log("Good Evening");
+    break;
+}
+
+//Truthy & Falsy
