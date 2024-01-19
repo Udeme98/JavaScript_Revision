@@ -22,4 +22,18 @@ const calculator = (num1, num2, operator) => {
   console.log(res);
   return res;
 };
-calculator(2, 2, "+");
+// calculator(2, 2, "+");
+
+//challenge: conditionals/loop
+//FizzBuzz
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+  } else {
+    console.log(i);
+  }
+}
