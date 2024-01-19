@@ -19,8 +19,34 @@
 
 //nested loops
 for (let i = 0; i <= 5; i++) {
-  console.log(i);
+  // console.log(i);
   for (let j = 1; j <= 5; j++) {
-    console.log(`${i} * ${j} = ${i * j}`);
+    // console.log(`${i} * ${j} = ${i * j}`);
   }
+}
+
+// looping through an array
+let fruits = ["apple", "mango", "orange"];
+// console.log("My favorite fruits are:");
+for (let i = 0; i < fruits.length; i++) {
+  // console.log(fruits[i]);
+}
+
+//Break and Continue statement
+// break - allows us break out of the loop
+for (let i = 0; i < 11; i++) {
+  if (i === 5) {
+    // console.log("breaking...");
+    break;
+  }
+  // console.log(i);
+}
+
+// continue-allows us skip a code in a current iteration and continue with the other codes
+for (let i = 0; i < 11; i++) {
+  if (i === 5) {
+    console.log("skipping 5...");
+    continue;
+  }
+  console.log(i);
 }
