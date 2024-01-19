@@ -45,8 +45,43 @@ for (let i = 0; i < 11; i++) {
 // continue-allows us skip a code in a current iteration and continue with the other codes
 for (let i = 0; i < 11; i++) {
   if (i === 5) {
-    console.log("skipping 5...");
+    // console.log("skipping 5...");
     continue;
   }
-  console.log(i);
+  // console.log(i);
 }
+
+// while/do-while
+// while loop
+// let i = 1;
+// while (i < 11) {
+//   // console.log("Number " + i);
+//   // i++;
+// }
+
+//looping through arrays
+// let nums = [10, 20, 30, 40, 50];
+// let i;
+// while (i < nums.length) {
+//   console.log(nums[i]);
+//   i++;
+// }
+
+//nested while loop
+let a = 1;
+while (a < 6) {
+  // console.log(a);
+  let b = 1;
+  while (b < 6) {
+    // console.log(`${a}*${b}=${a * b}`);
+    b++;
+  }
+  a++;
+}
+
+// do-while - causes a loop to run atleast once, even if the condition isn't met
+let c = 21;
+do {
+  console.log(c);
+  c++;
+} while (c < 20);
