@@ -82,6 +82,35 @@ while (a < 6) {
 // do-while - causes a loop to run atleast once, even if the condition isn't met
 let c = 21;
 do {
-  console.log(c);
+  // console.log(c);
   c++;
 } while (c < 20);
+
+//for..of - to iterate arrays, strings, map
+const names = ["John", "James", "Joe"];
+for (const name of names) {
+  // console.log(name);
+}
+
+//over maps
+const maps = new Map();
+maps.set("name", "Anny");
+maps.set("age", 34);
+
+// for (const mp of maps) console.log(mp);
+
+//for..in loop - for looping object literals/values
+const color = {
+  color1: "red",
+  color2: "green",
+  color3: "blue",
+};
+for (const key in color) {
+  // console.log(`${key}: ${color[key]}`);
+}
+
+//using for.in in an array
+const colors = ["red", "green", "blue"];
+for (const key in colors) {
+  console.log(colors[key]);
+}
