@@ -1,1 +1,6 @@
-console.log("Higher Order Array Methods");
+// Higher Order Array Methods;
+// forEach
+const socials = ["Twitter", "LinkedIn", "Instagram"];
+socials.forEach((social) => {
+  console.log(social);
+});
