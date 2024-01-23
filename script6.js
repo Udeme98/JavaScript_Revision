@@ -9,7 +9,7 @@ const socials = ["Twitter", "LinkedIn", "Instagram"];
 function listSocials(social) {
   console.log(social);
 }
-socials.forEach(listSocials);
+// socials.forEach(listSocials);
 
 //using array of objects
 const socialObjs = [
@@ -18,3 +18,4 @@ const socialObjs = [
   { name: "Joe", social: "LinkedIn" },
   { name: "Jane", social: "Instagram" },
 ];
+socialObjs.forEach((socialObj) => console.log(socialObj.name));
