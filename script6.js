@@ -18,4 +18,6 @@ const socialObjs = [
   { name: "Joe", social: "LinkedIn" },
   { name: "Jane", social: "Instagram" },
 ];
-socialObjs.forEach((socialObj) => console.log(socialObj.name));
+socialObjs.forEach((socialObj) =>
+  console.log(`${socialObj.name} - ${socialObj.social}`)
+);
