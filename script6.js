@@ -82,4 +82,21 @@ const evenN_double = numbers
   .map((evenD) => {
     return evenD * 2;
   });
-console.log(evenN_double);
+// console.log(evenN_double);
+
+//reduce - reduces array down to a single value
+const sum = numbers.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+}, 0);
+// console.log(sum);
+
+// using reduce method to find the total price
+const cart = [
+  { id: 1, name: "Product-1", price: 100 },
+  { id: 2, name: "Product-2", price: 200 },
+  { id: 3, name: "Product-3", price: 300 },
+];
+const totalPrice = cart.reduce((acc, cur) => {
+  return acc + cur.price;
+}, 0);
+console.log(totalPrice);
