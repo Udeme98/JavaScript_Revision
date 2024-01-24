@@ -1,6 +1,6 @@
 // Challenges pt.2
 
-//challenges: Logic and control flow
+//challenge: Logic and control flow
 const calculator = (num1, num2, operator) => {
   let res;
   switch (operator) {
@@ -38,7 +38,7 @@ for (let i = 1; i <= 100; i++) {
   }
 }
 
-// Challenges 1a: Array Methods
+// Challenge 1: Array Methods
 // create an array containing the name and email of people 25 and younger
 const people = [
   {
@@ -72,7 +72,6 @@ const people = [
     age: 23,
   },
 ];
-
 // solution: using filter method
 const youngPeople = people
   .filter((young) => {
@@ -82,6 +81,27 @@ const youngPeople = people
     return {
       name: `${young.firstName} ${young.lastName}`,
       age: `${young.age}`,
+      email: young.email,
     };
   });
-console.log(youngPeople);
+// console.log(youngPeople);
+
+// Challenge 2: Array Methods
+// Add all the positive numbers in the array:
+const numbs = [2, -30, 50, 20, -12, -9, 7];
+
+//solution: using filter & map
+const sumPosN = numbs
+  .filter((numb) => numb > 0)
+  .reduce((acc, cur) => {
+    return acc + cur;
+  });
+// console.log(sumPosN);
+
+// challenge 3: array methods
+// Capitalize the first letter in each word in the array
+const words = ["coder", "programmer", "developer"];
+const capsWord = words.map((word) => {
+  return word[0].toUpperCase() + word.substring(1);
+});
+console.log(capsWord);
