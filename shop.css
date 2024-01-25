@@ -58,6 +58,7 @@ header h1 {
 /*buttons*/
 .btn {
   background-color: #333;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -79,6 +80,7 @@ header h1 {
 
 .btn-clear {
   margin-top: 20px;
+  font-family: "Poppins", sans-serif;
   width: 100%;
   font-size: 16px;
   background-color: transparent;
