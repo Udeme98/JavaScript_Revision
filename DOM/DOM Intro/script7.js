@@ -8,13 +8,6 @@
 // console.dir(document);
 // HTMLCollection - similar to an array!
 
-//DoM methods
-// document.write("Hello Udeme");
-// console.log(document.getElementById("main"));
-const main = document.getElementById("main");
-// main.innerHTML = 'Hello';
-// document.querySelector("#main h1").innerText = "Udeme";
-
 // DOM Properties
 let output;
 
