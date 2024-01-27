@@ -28,4 +28,19 @@ output = secondItem.nextElementSibling;
 secondItem.nextElementSibling.style.color = "green";
 secondItem.previousElementSibling.style.color = "orange";
 
+//Traversing the DOM - All Nodes
+output = parent.childNodes;
+output = parent.firstChild;
+output = parent.lastChild.innerText;
+
+//parent node
+output = child.parentNode;
+output = child.parentNode.style.backgroundColor = "#ccc";
+output = child.parentNode.style.borderRadius = "10px";
+
+//siblings node
+output = secondItem;
+output = secondItem.nextSibling; // getting the next node sibling
+output = secondItem.previousSibling; // getting the prev node sibling
+
 console.log(output);
