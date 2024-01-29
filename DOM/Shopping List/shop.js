@@ -36,3 +36,27 @@ function insertItemBefore() {
   ul.insertBefore(li, thirdItem);
 }
 // insertItemBefore();
+
+//challenges: DOM
+// Custom insertAfter() challenge - create an insertAfter() function
+function insertAfter(newEl, oldItem) {
+  const ul = document.querySelector("ul");
+
+  newEl = document.createElement("li");
+  newEl.textContent = "Inserts After";
+
+  oldItem = document.querySelector("li:nth-child(3)");
+  oldItem.insertAdjacentElement("afterend", newEl);
+}
+// insertAfter();
+
+//Brad's solution
+function insertAfter(newEl, existingEl) {
+  existingEl.parentElement.insertBefore(newEl, existingEl.nextSibling);
+}
+const li = document.createElement("li"); //new element to insert
+li.textContent = "insert me after";
+
+const oldItem = document.querySelector("li:nth-child(3)"); // existing element to insert after
+
+insertAfter(li, oldItem);
