@@ -25,7 +25,7 @@ function replaceAll() {
       : (item.outerHTML = "<li>Replaced</li>")
   );
 }
-replaceAll();
+// replaceAll();
 
 //replacing child
 function replaceChildHeading() {
@@ -39,3 +39,12 @@ function replaceChildHeading() {
   header.replaceChild(h2, h1);
 }
 // replaceChildHeading();
+
+//removing items/elements
+// remove() - called on the element we want to remove
+// removeChild() - called on the parent element, then you pass in the element we want to remove
+function removeElement() {
+  const fltBtn = document.querySelector(".filter");
+  fltBtn.remove();
+}
+// removeElement();
