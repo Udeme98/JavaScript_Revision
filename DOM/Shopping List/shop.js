@@ -14,7 +14,7 @@ function secondElement() {
   const second = document.querySelector("li:nth-child(2)");
   second.outerHTML = "<li>Replaced</li>";
 }
-secondElement();
+// secondElement();
 
 //replacing all the items
 function replaceAll() {
@@ -48,3 +48,12 @@ function removeElement() {
   fltBtn.remove();
 }
 // removeElement();
+
+// removeChild()
+function remChild() {
+  const ul = document.querySelector("ul");
+  const firstItem = document.querySelector("li:first-child");
+
+  ul.removeChild(firstItem);
+}
+remChild();
