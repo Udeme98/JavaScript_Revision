@@ -73,3 +73,14 @@ function removeItem2(itemNumber) {
   ul.removeChild(li);
 }
 // removeItem2(3);
+
+function removeItem3(itemNumber) {
+  const li = document.querySelectorAll("li");
+  li[itemNumber - 1].remove();
+}
+// removeItem3(1);
+
+//refacturing removeItem3 to arrow fxn
+const removeItem4 = (item) =>
+  document.querySelectorAll("li")[item - 1].remove();
+removeItem4(1);
