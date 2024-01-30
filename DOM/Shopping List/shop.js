@@ -7,7 +7,7 @@ function firstElement() {
 
   first.replaceWith(newItem);
 }
-firstElement();
+// firstElement();
 
 //replacing second item using outerHTML
 function secondElement() {
@@ -56,4 +56,20 @@ function remChild() {
 
   ul.removeChild(firstItem);
 }
-remChild();
+// remChild();
+
+function removeItem(item) {
+  const ul = document.querySelector("ul");
+  const li = document.querySelector(`li:nth-child(${item}`);
+
+  ul.removeChild(li);
+}
+// removeItem(3);
+
+function removeItem2(itemNumber) {
+  const ul = document.querySelector("ul");
+  const li = document.querySelectorAll("li")[itemNumber - 1];
+
+  ul.removeChild(li);
+}
+// removeItem2(3);
