@@ -17,7 +17,7 @@ const firstItem = list.querySelector("li");
 //selectors used for multiple elements
 // document.querySelectorAll()
 const listItems = document.querySelectorAll(".items"); // returns a nodelist
-listItems[0].style.color = "red";
+// listItems[0].style.color = "red";
 
 console.log(listItems[0]);
 
@@ -66,7 +66,7 @@ const newItem = (item) => {
 
   document.querySelector("ul").appendChild(li);
 };
-newItem("Mango");
+// newItem("Mango");
 
 // Refactoring to Multiple Functions
 //button function
@@ -143,7 +143,7 @@ li.textContent = "insert me after";
 
 const oldItem = document.querySelector("li:nth-child(3)"); // existing element to insert after
 
-insertAfter(li, oldItem);
+// insertAfter(li, oldItem);
 
 // Replacing elements
 function firstElement() {
@@ -230,4 +230,4 @@ function removeItem3(itemNumber) {
 //refacturing removeItem3 to arrow fxn
 const removeItem4 = (item) =>
   document.querySelectorAll("li")[item - 1].remove();
-removeItem4(1);
+// removeItem4(1);
