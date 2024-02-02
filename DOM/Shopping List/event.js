@@ -32,6 +32,19 @@ clearBtn.addEventListener("click", clear);
 // mouse events
 const head = document.querySelector("#app-title");
 
-function onEvent() {
-  console.log("click event");
-}
+const onClick = () => console.log("click event");
+
+const onDoubleClick = () => {
+  document.body.style.backgroundColor = "purple";
+  document.body.style.color = "white";
+};
+const onRightClick = () => console.log("right click event");
+const onMouseDown = () => console.log("mouse down event");
+const onMouseUp = () => console.log("mouse up event");
+
+//event listeners
+head.addEventListener("click", onClick); //single click
+head.addEventListener("dblclick", onDoubleClick); //double click
+head.addEventListener("contextmenu", onRightClick); //right click event
+head.addEventListener("mousedown", onMouseDown); //mouse down event
+head.addEventListener("mouseup", onMouseUp); //mouse up event
