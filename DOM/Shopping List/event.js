@@ -53,9 +53,32 @@ head.addEventListener("click", onClick); //single click
 head.addEventListener("dblclick", onDoubleClick); //double click
 head.addEventListener("contextmenu", onRightClick); //right click event
 head.addEventListener("mousedown", onMouseDown); //mouse down event
+head.addEventListener("mouseup", onMouseUp); //mouse up event
 head.addEventListener("wheel", onMouseWheel); //mouse wheel event
-head.addEventListener("mouseover", onMouseOver); //mouse over event
-head.addEventListener("mouseout", onMouseOut); //mouse out event
+// head.addEventListener("mouseover", onMouseOver); //mouse over event
+// head.addEventListener("mouseout", onMouseOut); //mouse out event
 head.addEventListener("dragstart", onDragStart); //drag start event
 head.addEventListener("drag", onDrag); //drag event
 head.addEventListener("dragend", onDragEnd); //drag end event
+// The Event Object(e)
+function onClick2(e) {
+  // consoSle.log(e);
+  // console.log(e.target);
+  console.log(e.type);
+}
+
+const firstItem = document.querySelector("li");
+
+firstItem.addEventListener("click", onClick2);
+//target - the element that triggerd the event
+//currentTraget - The element that the event listener is attached to
+//type- type of event that was triggered
+//timeStamp - The time the event was triggered
+//clientX - The x position of the mouse click relative to the window
+//clientY - The y position of the mouse click relative to the window
+//offsetX - The x position of the mouse click relative to the element
+//offsetY - The y position of the mouse click relative to the element
+//pageX - The x position of the mouse click relative to the page
+//pageY - The y position of the mouse click relative to the page
+//screenX - The x position of the mouse click relative to the screen
+//screenY - The y position of the mouse click relative to the screen
