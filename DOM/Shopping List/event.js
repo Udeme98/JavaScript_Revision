@@ -82,3 +82,37 @@ firstItem.addEventListener("click", onClick2);
 //pageY - The y position of the mouse click relative to the page
 //screenX - The x position of the mouse click relative to the screen
 //screenY - The y position of the mouse click relative to the screen
+
+//Keyboard events and Key properties
+const itemInput = document.getElementById("item-input");
+
+const keypress = (e) => console.log("keypress");
+const keydown = (e) => console.log("keydown");
+const keyup = (e) => console.log("keyup");
+
+// itemInput.addEventListener("keypress", keypress); //keypress event
+// itemInput.addEventListener("keydown", keydown); //keydown event
+// itemInput.addEventListener("keyup", keyup); //keyup event
+
+//to know the key clicked
+function theKey(e) {
+  //key
+  console.log(e.key);
+
+  //key code
+  //https://www.toptal.com/developers/keycode/table-of-all-keycodes
+  console.log(e.keyCode);
+
+  //code
+  console.log(e.code);
+
+  //repeat property
+  if (e.repeat) {
+    console.log(`You're holding down ${e.key}`);
+  }
+
+  console.log("Shift Key:" + e.shiftKey); // shift key
+  console.log("Control Key:" + e.ctrlKey); // control key
+  console.log("Alt Key:" + e.altKey); //alt/opt key
+}
+itemInput.addEventListener("keypress", theKey); //
