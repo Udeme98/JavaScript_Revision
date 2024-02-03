@@ -17,16 +17,16 @@ function eKey(e) {
 // body.addEventListener("keypress", eKey);
 
 //solutions:
-// Method 1
-// window.addEventListener("keypress", (e) => {
-//const insert = document.getElementById("insert");
+//Method 1
+window.addEventListener("keypress", (e) => {
+  const insert = document.getElementById("insert");
 
-//insert.innerHTML = `
-//    <div class="key">${e.key === " " ? "space" : e.key}<small>e.key</small></div>
-//       <div class="key">${e.keyCode}<small>e.keyCode</small></div>
-//       <div class="key">${e.code}<small>e.code</small></div>
-//  `;
-// });
+  insert.innerHTML = `
+   <div class="key">${e.key === " " ? "space" : e.key}<small>e.key</small></div>
+      <div class="key">${e.keyCode}<small>e.keyCode</small></div>
+      <div class="key">${e.code}<small>e.code</small></div>
+ `;
+});
 
 //Method 2
 function showKeyCodes(e) {
