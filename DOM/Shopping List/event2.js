@@ -45,7 +45,33 @@ function onSubmit(e) {
   const item = document.getElementById("item-input").value;
   const priority = document.getElementById("priority-input").value;
 
+  //form validation
+  if (item === "" || priority === "0") {
+    alert("Please fill in the inputs");
+    return;
+  }
   console.log(item, priority);
 }
+//form.addEventListener("submit", onSubmit);
 
-form.addEventListener("submit", onSubmit);
+//form data object
+function onSubmit2(e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  // const item = formData.get("item");
+  // const priority = formData.get("priority");
+
+  const entries = formData.entries();
+
+  //console.log(item, priority);
+  //console.log(entries); // returns an ierator
+
+  for (let entry of entries) {
+    console.log(entry); //returns an array, containing the name and value
+    console.log(entry[0]); //returns the name
+    console.log(entry[1]); //returns the value
+  }
+}
+form.addEventListener("submit", onSubmit2);
