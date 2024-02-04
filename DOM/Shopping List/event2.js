@@ -6,7 +6,7 @@ const heading = document.querySelector("h1");
 
 function onInput(e) {
   //   console.log(e.target.value);
-  heading.innerText = e.target.value;
+  //heading.innerText = e.target.value;
 }
 
 function onChecked(e) {
@@ -34,3 +34,18 @@ function onBlur() {
 }
 itemInput.addEventListener("focus", onFocus);
 itemInput.addEventListener("blur", onBlur);
+
+//Form submision and form data object
+const form = document.getElementById("item-form");
+
+function onSubmit(e) {
+  e.preventDefault();
+
+  //getting the values submitted to the form
+  const item = document.getElementById("item-input").value;
+  const priority = document.getElementById("priority-input").value;
+
+  console.log(item, priority);
+}
+
+form.addEventListener("submit", onSubmit);
