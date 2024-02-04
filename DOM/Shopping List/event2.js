@@ -74,4 +74,25 @@ function onSubmit2(e) {
     console.log(entry[1]); //returns the value
   }
 }
-form.addEventListener("submit", onSubmit2);
+//form.addEventListener("submit", onSubmit2);
+
+//Event bubbling
+// With bubbling,the event if first captured and handled by the innermost element
+// and then propagated to other elements.
+const button = document.querySelector("form button");
+const div = document.querySelector(".form-control");
+const form1 = document.querySelector("form");
+
+button.addEventListener("click", (e) => {
+  // alert("button was clicked");
+  e.stopPropagation(); //prevents event bubbling
+  e.stopImmediatePropagation(); //prevents multple event for asingle element
+});
+
+div.addEventListener("click", () => {
+  // alert("div was clicked");
+});
+
+form1.addEventListener("click", () => {
+  // alert("form was clicked");
+});
