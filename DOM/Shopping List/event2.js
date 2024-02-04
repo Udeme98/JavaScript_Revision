@@ -96,3 +96,40 @@ div.addEventListener("click", () => {
 form1.addEventListener("click", () => {
   // alert("form was clicked");
 });
+
+//Event delegation and multiple events
+const listItems = document.querySelectorAll("li");
+
+//inefficient method
+listItems.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    // e.target.remove();
+  });
+});
+
+//using event delegation instead
+const list = document.querySelector("ul");
+
+list.addEventListener("click", (e) => {
+  if (e.target.tagName === "LI") {
+    e.target.remove();
+  }
+});
+
+//Page loading and Windows Event
+window.addEventListener("load", () => console.log("Page loaded"));
+window.addEventListener("DOMContentLoaded", () => console.log("DOM loaded"));
+console.log("This load first");
+
+window.addEventListener("resize", () => {
+  document.querySelector(
+    "h1"
+  ).innerText = `Resized to ${window.innerWidth} x ${window.innerHeight}`;
+});
+
+window.addEventListener("scroll", () => {
+  console.log(`Scrolled: ${window.scrollX} x ${window.scrollY}`);
+});
+
+//focus
+//blur
