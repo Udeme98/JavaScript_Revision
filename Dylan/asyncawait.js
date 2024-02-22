@@ -27,3 +27,11 @@ const apiUrl = "https://api.chucknorris.io/jokes/random";
 fetch(apiUrl)
   .then((res) => res.json())
   .then((data) => console.log(data.value));
+
+//solution - using async/await
+async function joke() {
+  const res = await fetch(apiUrl);
+  const data = await res.json();
+  console.log(data.value);
+}
+joke();
